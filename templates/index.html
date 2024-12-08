@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{url_for('static',filename='styles.css')}}">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h1>About Me</h1>
+        <p>Hi, I'm a passionate developer specializing in Python, Flask, and MongoDB. I enjoy creating modern, interactive web applications.</p>
+    </section>
+
+    <section id="skills">
+        <h1>Skills</h1>
+        <ul>
+            <li>Python</li>
+            <li>Flask</li>
+            <li>MongoDB</li>
+            <li>Web Development</li>
+            <li>Front-End (HTML, CSS, JavaScript)</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h1>Projects</h1>
+        <p>Here are some of the projects I've worked on:</p>
+        <div class="project-cards">
+            <div class="card">
+                <h3>Product selling website</h3>
+                <p>A Client requested website for selling Crochet creations.</p>
+                <button onclick="window.open('https://github.com/Sedaghat-Dev/Crochet-Selling-Website', '_blank')">View Code</button>
+            </div>
+            <div class="card">
+                <h3>Portfolio Website</h3>
+                <p>This portfolio website itself, built with Flask, showcasing my projects and skills.</p>
+                <button onclick="window.open('https://github.com/Sedaghat-Dev/Portfolio.git', '_blank')">View Code</button>
+            </div>
+            <div class="card">
+                <h3>Task Manager</h3>
+                <p>A to-do list app using Flask and MongoDB to keep track of tasks.</p>
+                <button onclick="window.open('https://github.com/Sedaghat-Dev/Task-Manager', '_blank')">View Code</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h1>Contact</h1>
+        <p>Feel free to reach out to me!</p>
+        <form action="#">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <script>
+        function showModal(title, description) {
+            alert(title + "\n\n" + description);
+        }
+    </script>
+</body>
+</html>
